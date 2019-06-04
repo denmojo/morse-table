@@ -55,7 +55,11 @@ struct t_mtab morsetab[] = {
 #define DOTLEN  (1200/SPEED)
 #define DASHLEN  (3*(1200/SPEED))
 
-int LEDpin = 13 ;
+// On a Arduino Uno, use PIN 13
+// On a Arduino Trinket, use Pin 1
+
+// int LEDpin = 13 // Arduino Uno - Add 1k resistor in series
+int LEDpin = 1 ; 
 
 void
 dash()
